@@ -1,0 +1,39 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+
+    <!-- nav buttons general hymn options -->
+      <ion-nav-buttons side="secondary">
+        <button style="color:#999" class="button button-icon ion-android-more-vertical" ng-click="doSomething()"></button>
+      </ion-nav-buttons>
+    <!-- content -->
+
+  <ion-content class="padding" style="margin-bottom:50px">
+    
+
+    <div class="detailcard" class="list card">
+
+		
+
+		 <div class="item item-body" style="border-color:rgb(255, 255, 255); text-align:center">
+    		<p ng-bind-html="chat.lastText"></p>
+ 	   </div>
+ 	   
+  
+		
+	</div>
+
+  </ion-content>
+
+  <div class="button-bar hymnoptions">
+  			<a class="button  dark icon ion-stop" style="border-color:rgb(255, 255, 255)"></a>
+  			<a class="button  dark icon ion-ios-musical-note" style="border-color:rgb(255, 255, 255)"></a>
+  			<a class="button  assertive icon ion-heart" style="border-color:rgb(255, 255, 255)"></a>
+		</div>
+</ion-view>
+
+

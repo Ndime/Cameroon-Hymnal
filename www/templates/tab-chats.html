@@ -1,0 +1,34 @@
+<ion-view view-title="Hymns">
+
+    <!-- nav buttons general hymn options -->
+    <ion-nav-buttons side="secondary">
+      <button style="color:#999" class="button button-icon ion-android-more-vertical" ng-click="doSomething()"></button>
+    </ion-nav-buttons>
+<!-- content -->
+  <ion-content overflow-scroll="true">
+          <div style="height:58px;" class="item item-input">
+            <i class="icon ion-search placeholder-icon">
+            </i>
+            <input type="text" placeholder="Search Hymns..." ng-model="search">
+              
+               <button style="font-size: xx-large; padding-right:15px; color:#888" ng-show="search.length" ng-click="search=''" class="button button-icon ion-ios-close-outline input-button">
+              </button>
+          </div>
+          
+    
+      <ion-item class="item-remove-animate item-avatar item-icon-right " collection-repeat="chat in chats | filter:search" type="item-text-wrap" item-render-buffer="10" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <strong><p ng-bind-html="chat.season"></p></strong>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete <!-- doest work bcos of deleted ion-list tag -->
+        </ion-option-button>
+      </ion-item>
+    
+    
+  </ion-content>
+
+
+</ion-view>

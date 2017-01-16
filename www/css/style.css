@@ -1,0 +1,48 @@
+/* Empty. Add your own CSS if you like */
+.season{
+color: #808080;
+font-weight: 100px;
+
+}
+.item-avatar .item-content > img:first-child{
+	border-radius: 0px;
+}
+
+.detailcard{
+
+max-width: 600px;
+margin: auto;
+
+}
+
+.platform-ios .hymnoptions{
+   opacity: 0.9;
+    position: fixed;
+    bottom: 50px;
+    /* right: 5%; */
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    /* top: 62%; */
+    width: 100%;
+    /* text-align: center; */
+    height: 50px;
+    /* margin-top: -20px; */
+    /* color: white; */
+}
+
+.platform-android .hymnoptions{
+  opacity: 0.9;
+    position: fixed;
+    bottom: 0px;
+    /* right: 5%; */
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    /* top: 62%; */
+    width: 100%;
+    /* text-align: center; */
+    height: 50px;
+    /* margin-top: -20px; */
+    /* color: white; */
+}
